@@ -1,0 +1,38 @@
+SPARK AI - Telegram bot
+=======================
+
+ISHGA TUSHIRISH
+1. Zipni to'liq oching (Extract All). Zip ichidan ishga tushirmang.
+2. start.bat ustiga ikki marta bosing.
+3. Birinchi marta so'raydi:
+   - Telegram bot token (BotFather'dan)
+   - Gemini API kalit (aistudio.google.com -> Get API key)
+   Ular .env fayliga saqlanadi, keyingi safar so'ramaydi.
+4. Oynada "Spark AI ishga tushdi" chiqsa, Telegramda botga /start yozing.
+5. Oynani yopmang. Yopsangiz, bot to'xtaydi.
+
+BUYRUQLAR
+/start             - boshlash
+/spark             - Spark mashinasi dvigatel ovozi bilan kelib, fonarini 2 marta yoqib-o'chiradi
+/reset             - suhbatni tozalash
+/logo tavsif       - logo yaratish. Masalan: /logo Spark AI, ko'k va sariq, chaqmoq
+/musiqa nom        - qo'shiq topib MP3 yuborish. Masalan: /musiqa Qalbim
+/video nom         - video topib yuborish
+YouTube havolasini tashlasangiz, MP3 yoki Video tanlash chiqadi.
+Oddiy gap bilan ham bo'ladi: "YouTube'dan Qalbim qo'shig'ini top"
+
+MUAMMO BO'LSA
+- 409 Conflict: bot ikki joyda ishlayapti. Hamma qora oynalarni yoping,
+  cmd ga "taskkill /F /IM python.exe" yozing, keyin start.bat ni bir marta bosing.
+- Kalitni almashtirish: .env faylini o'chiring, start.bat ni qayta bosing.
+- MP3 o'rniga m4a kelsa: ffmpeg o'rnating (cmd ga: winget install ffmpeg).
+- Yuklash xato bersa: start.bat ni qayta bosing (yt-dlp yangilanadi).
+- Fayl hajmi 50 MB dan oshmasligi kerak (Telegram bot cheklovi).
+
+XAVFSIZLIK
+- Token va API kalitni hech kimga yubormang, skrinshotda ko'rsatmang.
+- .env faylini hech kimga bermang.
+- Token oshkor bo'lsa: BotFather -> /revoke.
+
+spark_intro.mp4 - /spark animatsiyasi (videoni bossangiz ovoz chiqadi). O'chirmang!
+spark_ai_logo.png - bot rasmi uchun (BotFather -> /setuserpic).
